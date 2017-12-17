@@ -1,19 +1,14 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: About our values
+title: About me
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Half the woman I used to be
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+My name is Sharon Stinson and about 10 years ago I stopped weighing myself when the scale hit 282 lbs. I continued to gain, never knowing how heavy I eventually was. One morning I woke up and knew things needed to change. Not another liquid diet, another grapefruit diet or another stab at the Atkins diet; it was time to make real change.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+My first step was to begin making small changes in my eating which built over time into big changes. I began to lose weight like I had after so many times before but I knew this time if it was going to stay off I had to add exercise. I searched for a Personal Trainer to understand my goals and teach me the right way to lift weights and build fat burning muscle. Feeling stronger and physically confident was new for me and within 2 years I had settled in at 160 lbs.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+I continued to struggle to find an exercise that gave me a cardio workout until the day I found Nia. My first class left me drenched in sweat and knowing that I would eventually teach Nia. I loved it and found an unexpected but wonderful side effect when my weight started coming off again.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Now I'm lucky enough to get to help people change their lives every day. I teach Nia and Pilates, and do Personal Training and Weight Loss Coaching. And I'd love to help you.
