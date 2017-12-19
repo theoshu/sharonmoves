@@ -9,6 +9,10 @@ $primary-invert: $kaldi-red-invert
 
 $navbar-background-color: $black-ter
 $navbar-item-color: $white-ter
+$navbar-item-hover-color: $primary
+
+$family-primary: 'Barlow', sans-serif
+$weight-normal: 500
 
 // Helper Classes
 .full-width-image-container
@@ -27,7 +31,20 @@ $navbar-item-color: $white-ter
 .margin-top-0
   margin-top: 0 !important
 
+
+// Customizations
+h1, h2, h3, h4, h5, h6, .navbar
+  font-family: 'Barlow Condensed', sans-serif;
+
 .navbar-item
   text-transform: uppercase
+
+@media screen and (min-width: 1024px)
+  .navbar-brand > .navbar-item
+    padding-left: 0
+
+.blog-summary
+  border: 1px solid $grey-lighter
+  padding: 2rem
 
 @import "~bulma"

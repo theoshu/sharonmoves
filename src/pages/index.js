@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import Script from 'react-load-script';
+import sharonBall from '../img/sharon-ball.jpg';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -27,30 +28,39 @@ export default class IndexPage extends React.Component {
           onLoad={this.handleScriptLoad.bind(this)}
         />
         <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+          <div className='columns is-desktop'>
+            <div className="content column is-one-quarter">
+              <img alt='sharon ball' src={sharonBall} style={{ width: '100%' }} />
+            </div>
+            <div className="content column is-three-quarters">
+              <h1 className='is-size-2'>
+                Home
+              </h1>
+              <p>Sharon Moves is an exciting new pilates studio in Houston’s historic Heights neighborhood. Owner Sharon Stinson is a certified, experienced instructor ready to help you achieve your fitness goals and a balanced life. Ready to get moving? Contact us now to schedule a private or duet pilates session.</p>
+              <h1 className='is-size-2'>Blog Entries</h1>
+              {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
+                return (
+                  <div className="content blog-summary" key={post.id}>
+                    <p>
+                      <Link className="has-text-primary" to={post.frontmatter.path}>
+                        {post.frontmatter.title}
+                      </Link>
+                      <span> &bull; </span>
+                      <small>{post.frontmatter.date}</small>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.frontmatter.path}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
-            return (
-              <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-                <p>
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.frontmatter.path}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            );
-          })}
         </div>
       </section>
     );

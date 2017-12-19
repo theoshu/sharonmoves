@@ -1,7 +1,9 @@
 ---
 templateKey: about-page
 path: /about
+image: /img/about-us.jpg
 title: About
+heading: About Sharon
 ---
 Sharon Stinson is a dedicated fitness instructor in Houston with 12+ years of experience in pilates, gyrotonic, suspension, and personal training. Her passion is leading clients to a balanced life via pilates, cardio, and strength training.
 
