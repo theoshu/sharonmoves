@@ -2,15 +2,16 @@ import React from 'react';
 import Content, { HTMLContent } from '../components/Content';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+  const netlifyAttr = { 'data-netlify': 'true' };
   const PageContent = contentComponent || Content;
-  return <section className='section section--gradient'>
+  return (<section className='section section--gradient'>
     <div className='container'>
       <div className='columns'>
         <div className='column is-10 is-offset-1'>
           <div className='section'>
             <h2 className='title is-size-3 has-text-weight-bold is-bold-light'>{title}</h2>
-            <PageContent className="content" content={content} />
-            <form name='contact' netlify>
+            <PageContent className='content' content={content} />
+            <form name='contact' {...netlifyAttr}>
               <div className='field'>
                 <label className='label' htmlFor='first-name'>First Name</label>
                 <div className='control'>
@@ -45,8 +46,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </div>
-  </section>;
-}
+  </section>);
+};
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
