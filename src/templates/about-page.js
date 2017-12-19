@@ -16,8 +16,8 @@ export const AboutPageTemplate = ({ image, title, heading, content, contentCompo
                 <h2
                   className='has-text-weight-bold is-size-1'
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
+                    boxShadow: '0.5rem 0 0 #3b65d8, -0.5rem 0 0 #3b65d8',
+                    backgroundColor: '#3b65d8',
                     color: 'white',
                     padding: '1rem'
                   }}
@@ -27,6 +27,7 @@ export const AboutPageTemplate = ({ image, title, heading, content, contentCompo
               </div>
               <div className='columns'>
                 <div className='column is-7'>
+                  <h3 className='is-size-2'>{heading}</h3>
                   <PageContent className='content' content={content} />
                 </div>
               </div>
@@ -44,6 +45,8 @@ export default ({ data }) => {
     <AboutPageTemplate
       content={post.html}
       contentComponent={HTMLContent}
+      heading={post.frontmatter.heading}
+      image={post.frontmatter.image}
       title={post.frontmatter.title}
     />
   );
@@ -55,8 +58,9 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         path
-        image
         title
+        image
+        heading
       }
     }
   }

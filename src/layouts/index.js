@@ -23,13 +23,10 @@ const Navbar = () => (
         <Link className='navbar-item' to='/why-pilates'>
           Why Pilates
         </Link>
-        <Link className='navbar-item' to='/products'>
-          Products
-        </Link>
       </div>
       <div className='navbar-end'>
-        <Link className='navbar-item' to='/contact'>
-          Contact
+        <Link className='navbar-item book-sharon' to='/contact'>
+          Book Sharon
         </Link>
       </div>
     </div>
@@ -38,7 +35,7 @@ const Navbar = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title='Home | Sharon Moves, Personal Trainer | Houston, Texas' />
+    <Helmet title='Sharon Moves, Personal Trainer | Houston, Texas' />
     <link href='https://fonts.googleapis.com/css?family=Barlow+Condensed:500|Barlow:500,700' rel='stylesheet'/>
     <Navbar />
     <div>{children()}</div>

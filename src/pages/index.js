@@ -22,17 +22,17 @@ export default class IndexPage extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
     return (
-      <section className="section">
+      <section className='section'>
         <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={this.handleScriptLoad.bind(this)}
+          url='https://identity.netlify.com/v1/netlify-identity-widget.js'
         />
-        <div className="container">
+        <div className='container'>
           <div className='columns is-desktop'>
-            <div className="content column is-one-quarter">
+            <div className='content column is-one-third'>
               <img alt='sharon ball' src={sharonBall} style={{ width: '100%' }} />
             </div>
-            <div className="content column is-three-quarters">
+            <div className='content column is-two-thirds'>
               <h1 className='is-size-2'>
                 Home
               </h1>
@@ -40,9 +40,9 @@ export default class IndexPage extends React.Component {
               <h1 className='is-size-2'>Blog Entries</h1>
               {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
                 return (
-                  <div className="content blog-summary" key={post.id}>
+                  <div className='content blog-summary' key={post.id}>
                     <p>
-                      <Link className="has-text-primary" to={post.frontmatter.path}>
+                      <Link className='has-text-primary' to={post.frontmatter.path}>
                         {post.frontmatter.title}
                       </Link>
                       <span> &bull; </span>
@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
                       {post.excerpt}
                       <br />
                       <br />
-                      <Link className="button is-small" to={post.frontmatter.path}>
+                      <Link className='button is-small' to={post.frontmatter.path}>
                         Keep Reading →
                       </Link>
                     </p>

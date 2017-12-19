@@ -1,7 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config
-$kaldi-red: #FD461E
+$kaldi-red: #3b65d8
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
@@ -23,7 +23,7 @@ $weight-normal: 500
   right: 50%
   margin: 5em -50vw
   background-size: cover
-  background-position: bottom
+  background-position: center
   display: flex
   justify-content: center
   align-items: center
@@ -38,6 +38,14 @@ h1, h2, h3, h4, h5, h6, .navbar
 
 .navbar-item
   text-transform: uppercase
+
+  &.book-sharon
+    padding: .25rem .5rem
+    margin: .25rem .5rem
+    background: $primary
+
+    &:hover
+      border: 1px solid $white
 
 @media screen and (min-width: 1024px)
   .navbar-brand > .navbar-item
